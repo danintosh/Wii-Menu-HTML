@@ -1,0 +1,324 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+@font-face {
+	font-family: "clock";
+	src: url("clock.ttf")
+}
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+	background-image: url("bg.png");
+	overflow: hidden;
+	cursor: url(cursor.png), auto;
+}
+
+.grid-main {
+	width: auto;
+	height: 77%;
+	display: grid;
+	overflow: hidden;
+	margin-top: 6%;
+	margin-left: 12%;
+}
+
+.grid-item2 {
+	margin-left: 120px;
+}
+
+.grid-main2 {
+	width: auto;
+	height: 77%;
+	display: grid;
+	overflow: hidden;
+	margin-top: 6%;
+	margin-left: 4%;
+}
+
+.grid-channel {
+	width: 280px;
+	height: 140px;
+	border-radius: 25px;
+	display: inline-grid;
+	overflow: hidden;
+	border: solid 6px rgb(184, 183, 188);
+	background-color: white;
+	margin-top: 10px;
+	cursor: url(cursor.png), auto;
+}
+
+.grid-channel:hover {
+	border: solid 6px rgb(125, 205, 232);
+
+}
+.grid-forward {
+	width: 120px;
+	height: 120px;
+	display: inline-grid;
+	background-image: url("forward.png");
+	margin-left: -18px;
+	cursor: url(cursor.png), auto;
+}
+
+.grid-channellabel {
+	width: 280px;
+	height: 48px;
+	border-radius: 25px;
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	border: solid 6px rgb(184, 183, 188);
+	background-color: white;
+	margin-top: 160px;
+	margin-left: -298px;
+	text-align: center
+}
+
+.grid-channellabel2 {
+	width: 280px;
+	height: 48px;
+	border-radius: 25px;
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	border: solid 6px rgb(184, 183, 188);
+	background-color: white;
+	margin-top: 160px;
+	margin-left: -292px;
+	text-align: center
+}
+
+.wiicur {
+	/* The second value here is a fallback. */
+	cursor: url(cursor.png), auto;
+}
+
+.logo {
+	width: 280px;
+	height: 140px;
+}
+
+.grid-forward:hover {
+	width: 120px;
+	height: 120px;
+	background-image: url("forwardhover.png");
+	cursor: url(cursor.png), auto;
+}
+
+.grid-back {
+	width: 120px;
+	height: 120px;
+	display: inline-grid;
+	background-image: url("back.png");
+	margin-left: -120px;
+	cursor: url(cursor.png), auto;
+}
+
+	.grid-back:hover {
+		width: 120px;
+		height: 120px;
+		background-image: url("backhover.png");
+		cursor: url(cursor.png), auto;
+	}
+
+.grid-forwardmob {
+	width: 120px;
+	height: 120px;
+	display: none;
+	background-image: url("forward.png");
+}
+
+.grid-forwardmob:hover {
+	width: 120px;
+	height: 120px;
+	background-image: url("forwardhover.png");
+}
+
+.grid-backmob {
+	width: 120px;
+	height: 120px;
+	display: none;
+	background-image: url("back.png");
+	margin-left: -120px;
+}
+
+.grid-backmob:hover {
+	width: 120px;
+	height: 120px;
+	background-image: url("backhover.png");
+}
+
+.grid-bottombar {
+	width: auto;
+	height: 888px;
+	background-image: url("bottom.png");
+	background-repeat: no-repeat;
+	background-size: 100%, 200%;
+	text-align: center;
+	margin-top: 8px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clock {
+	font-family: clock;
+	font-size: 68pt;
+	color: rgb(156, 156, 156);
+}
+
+.date {
+	font-size: 32pt;
+	color: rgb(123, 123, 125);
+	font-weight: 800;
+	text-shadow: -1px 0 rgb(123, 123, 125), 0 1px rgb(123, 123, 125), 1px 0 rgb(123, 123, 125), 0 -1px rgb(123, 123, 125);
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+		background-image: url("bg.png");
+		overflow: auto;
+	}
+
+	.grid-main {
+		width: auto;
+		height: auto;
+		display: grid;
+		overflow: auto;
+		margin-left: 0%;
+		margin-top: 0%;
+		float: center;
+	}
+
+	.grid-main2 {
+		width: auto;
+		height: auto;
+		display: grid;
+		overflow: auto;
+		margin-left: 0%;
+		margin-top: 0%;
+		float: center;
+	}
+
+	.grid-item2 {
+		margin-left: 0px;
+	}
+
+	.grid-channel {
+		text-align: center;
+		width: 240px;
+		height: 120px;
+		border-radius: 25px;
+		display: grid;
+		overflow: hidden;
+		border: solid 6px rgb(184, 183, 188);
+		background-color: white;
+		margin-top: 10px;
+	}
+
+		.grid-channel:hover {
+			border: solid 6px rgb(125, 205, 232);
+		}
+
+		.logo {
+			width: 240px;
+			height: 120px;
+		}
+
+		.grid-forward {
+			width: 120px;
+			height: 120px;
+			display: none;
+			background-image: url("forward.png");
+		}
+
+		.grid-forward:hover {
+			width: 120px;
+			height: 120px;
+			background-image: url("forwardhover.png");
+		}
+
+	.grid-back {
+		width: 120px;
+		height: 120px;
+		display: none;
+		background-image: url("back.png");
+		margin-left: 0px;
+	}
+
+	.grid-back:hover {
+		width: 120px;
+		height: 120px;
+		background-image: url("backhover.png");
+	}
+
+	.grid-forwardmob {
+		width: 120px;
+		height: 120px;
+		display: grid;
+		background-image: url("forward.png");
+	}
+
+	.grid-forward:hover {
+		width: 120px;
+		height: 120px;
+		background-image: url("forwardhover.png");
+	}
+
+	.grid-backmob {
+		width: 120px;
+		height: 120px;
+		display: grid;
+		background-image: url("back.png");
+		margin-left: 0px;
+	}
+
+		.grid-backmob:hover {
+			width: 120px;
+			height: 120px;
+			background-image: url("backhover.png");
+		}
+
+	.grid-bottombar {
+		display: none;
+		width: auto;
+		height: 888px;
+		background-image: url("bottom.png");
+		background-repeat: no-repeat;
+		background-size: 100%, 200%;
+		text-align: center;
+		margin-top: 28px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.clock {
+		display: none;
+		font-family: clock;
+		font-size: 68pt;
+		color: rgb(156, 156, 156);
+	}
+
+	.date {
+		display: none;
+		font-size: 32pt;
+		color: rgb(123, 123, 125);
+		font-weight: 800;
+		text-shadow: -1px 0 rgb(123, 123, 125), 0 1px rgb(123, 123, 125), 1px 0 rgb(123, 123, 125), 0 -1px rgb(123, 123, 125);
+	}
+}
